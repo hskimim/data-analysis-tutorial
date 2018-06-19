@@ -1,4 +1,4 @@
-Im studying about Data Science.
-Therefore, this repo gonna be about D/S.
-And main topic is about 1. math 2. programming.
-I'm very beginner and welcome for feedback. Thx
+This is about Data Science.
+I'm very beginner. So welcome feedback and clarification.
+Contents might be uploaded til neural network model.
+Thank you for reading.
