@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--
+    1. element// 시작과 종료 태그로 이뤄진 모든 코드를 의미합니다.
+    2. tag// 요소의 일부로 <p> , <a> , <a> , <spam> 등을 의미합니다.
+    3. contribute// part of element입니다
+                    id// Element를 나타내는 고유한 값으로 중복이 되면 안됩니다.
+                    class// Element를 그룹으로 묶어주는 값으로 같은 값이면 같이 묶어서 style을 정해줄 수 있습니다.
+                    attr// id 와 class를 제외한 나머지 attribute를 의미합니다.
+   -->
+   <!--1.Heading-> 제목을 표현하기 위한 element입니다 . -->
+   <h1> Heading h1 </h1>
+   <!--2. <p> : 한 줄을 표시하기 위한 element입니다.  -->
+   <!-- </p>가 되면 한 줄이 넘어가게 됩니다. -->
+   <p>hello world!</p><p>hello world!</p>
+   <p>hello worlds!</p>
+   <p>hello worldz!</p>
+   <!--3.span -> 한 블럭을 표현하기 위한 element입니다.  -->
+   <span class='s1'>span-tag-1</span>
+   <span class='s3'>span-tag-2</span>
+   <span class='s3'>span-tag-3</span>
+   <!--pre -> p와는 다르게 한 줄이 아닌, 개행이나 indentation이 적용됩니다.  -->
+   <pre>
+     python
+       hello worlds
+how are you guyz
+   </pre>
+   <!--b.strong -> 볼드체입니다.  -->
+   <p>This is not bold style <b>And this is read bold ok?</b></p>
+   <p>This is not bold style <strong>And this is read bold ok?</strong></p>
+   <!--i,em -> italic 체입니다.  -->
+    <pre>
+      you might be know about Italy.
+      <i>
+        but you cant say that
+      </i>
+      i know about <em>italic</em> you know what im saying?kk
+    </pre>
+    <!--sub -> 아래첨자입니다.  -->
+    <!--sup -> 윗첨자입니다.  -->
+    <span class='chr1'><sub>아래첨자입니다.</sub></span>
+    <span class='chr1'><sup>윗첨자입니다.</sup></span>
+    <p>this is <sub>blow section</sub> and this is <sup>upper section</sup></p>
+    <!--small -> 작은 글씨입니다.  -->
+    <p>this is <small>small letter.</small></p>
+    <!--mark -> 글자 배경이 노란색 입니다. -->
+    <pre>my background is
+       <mark>yellow</mark>
+    </pre>
+    <!--del -> 삭제 문자열입니다.  -->
+    <span class='c1'>Im gonna be <del>deleted...</del></span>
+    <!--ins -> underline string입니다.  -->
+    <p>I would never tell you about what is <ins>underline</ins> it is</p>
+    <!--code -> 코드를 나타냅니다.  -->
+    <p>Actually I cant understand about <code>code</code> tag...Not yet? hah?</p>
+    <!--div-layout tag입니다.  -->
+    <div>
+      <p>hello world! Is this layout??oh...so what?</p>
+    </div>
+    <!--여기서 잠깐!! emmet expression 에 대해서 알아보겠습니다!!  -->
+    <!-- h${dss$}*6 하고 탭을 해주면? -->
+    <!-- 크기가 점점 작아집니다!! -->
+    <h1>dss1</h1>
+    <h2>dss2</h2>
+    <h3>dss3</h3>
+    <h4>dss4</h4>
+    <h5>dss5</h5>
+    <h6>dss6</h6>
+    <!--  p{p_tag$}*3 -->
+    <!-- 3줄에 걸쳐서 개행이 되면서 진행이 됩니다! -->
+     <p>p_tag1</p>
+     <p>p_tag2</p>
+     <p>p_tag3</p>
+     <!--span{span_tag_$}*3  -->
+     <!--개행이 되지 않고 블록으로 묶여서 나란히 진행이 됩니다.  -->
+     <span>span_tag_1</span>
+     <span>span_tag_2</span>
+     <span>span_tag_3</span>
+     <!-- div{div$}*6 -->
+     <!--p처럼 개행을 되지만 칸의 간격이 떨어지지 않고 vertical하게 붙어서 진행이 됩니다.  -->
+      <div>div1</div>
+      <div>div2</div>
+      <div>div3</div>
+      <div>div4</div>
+      <div>div5</div>
+      <div>div6</div>
+    <!--table : 테이블을 나타냅니다.  -->
+    <!--2. table: 로우와 컬럼이 있는 테이블 모양을 나타낼 대 사용하는 element입니다.  -->
+    <!-- table>caption{table}+thead>tr>th{dss$}*2^^tbody>tr>th{dss$@3}*2 -->
+    <!--
+    > :  indentation이 되어서 진행되는겁니다. html에서 상위,하위 개념은 존재하지 않지만 더 깊은 계열과 layout이라고 생각하시면 됩니다.
+    + : 같은 layout에서 진행이 됩니다.
+    ^ : ^의 갯수별로 n칸 위의 layout의 layer를 따르게 됩니다.
+    $ : 숫자이고 default 값은 1부터 1씩 증가입니다.
+    @ : 숫자 default 값을 변경합니다 위의 예처럼 $@3이면 3부터 1씩 증가입니다
+   -->
+    <table>
+      <catpion>table</catpion>
+      <thead>
+        <tr>
+          <th>dss1</th>
+          <th>dss2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>dss@</th>
+          <th>dss@</th>
+        </tr>
+      </tbody>
+    </table>
+    <!--ul , li : 리스트를 element입니다.  -->
+    <ul>
+      <li>li_1</li>
+      <li>li_2</li>
+      <li>li_3</li>
+    </ul>
+
+    <!--a : 링크를 element입니다..  -->
+    <a href="http://google.com">google</a></br>
+    <a href="http://fastcampus.co.kr" target=_blank>naver</a>
+
+    <!--img : image element입니다  -->
+    <img src="https://ssl.pstatic.net/tveta/libs/1199/1199662/ff6b654b84bee9904e94_20180528112252035.jpg" width='400' alt="naver_ad">
+
+    <!--iframe : 외부 url을 보여주기 위한 element입니다.  -->
+    <iframe src="file:///C:/Users/hskim/Documents/git_project/dss_programming/html_basic1.html" width="200" height="200"></iframe>
+
+    <!--textarea : 여러 줄의 입력을 받을 수 있는 element입니다.  -->
+    <textarea name="name" rows="8" cols="80"></textarea>
+    <textarea name="name" rows="8" cols="80" style='resize:none'></textarea>
+    <!--select,option : 옵션을 선택할 수 있는 element입니다.  -->
+    <!-- select>option[value=$]{option$}*3 -->
+    <select>
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+          <option value="3">option3</option>
+    </select>
+
+    <!--button : 버튼을 나타내는 element 입니다.  -->
+    <button type="button" name="button" onclick="javascript(aler('whatsupp!'))">ClickMe!</button>
+
+    <!--input : text,radio,passward, checkbox : these are components of type  -->
+    <input type="text" name="ID" value="" placeholder="ID">
+    <input type="password" name="PW" value="" placeholder="PW"><br/>
+    <input type="radio" name="radio1">radio1</input>
+    <input type="radio" name="radio2">radio2</input>
+    <input type="radio" name="radio3">radio3</input><br/>
+    <input type="radio" name="radio4">radio4</input>
+    <input type="radio" name="radio5">radio5</input>
+    <input type="radio" name="radio6">radio6</input><br/>
+    <input type="checkbox">checkbox1</input>
+    <input type="checkbox">checkbox2</input>
+    <input type="checkbox">checkbox3</input><br/>
+  </body>
+</html>
+<!-- 추가적으로 알아본 사항들에 대해서 적어보겠습니다. -->
+<!--
+1. name 과 id는 어떻게 다른 것인가??
+말 그래로 ID는 unique하게 지정된 name입니다. name attribute는 중복될 수 있지만 id는 고유해야합니다.
+그러면 꼭 name은 쓸 필요가 없지 않는가?라는 의문에는 html을 만들 때 가장 많이 쓰는 드림위버에서는 id 속성을 쓸 수 없고,
+name 속성만 사용할 수 있다고 합니다. 따라서, 관례 상 name 과 id attribute를 같게끔 해서 element는 id 와 name을 꼭 둘 다 써주어야 합니다.
+2. class 속성은 모든 요소에 넣을 수 있는 속성으로, 주로 CSS로 스타일을 줄 때 사용
+3. id값은 페이지 내 단 한 번만 선언 가능하나, class 값은 여러 번 선언 가능
+4. class와 id 값의 이름은 무조건 짧게하기 보다는 알기 쉽도록 짓고, 의미에 맞게 넣는 것이 적합
+5.id는 페이지 내 단 한 번만 선언 가능하여, 유일한 이름을 짓는 것이 적합
+-->
